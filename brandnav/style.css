@@ -1,0 +1,253 @@
+body {
+   font-family: "Exo 2", sans-serif;
+   font-weight: 600;
+   font-size: 18px;
+   margin: 0;
+   padding: 0;
+}
+
+.outer{
+	text-align: center;
+}
+
+.page{
+	color: #346ccd;
+    font-size: 75px;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 25px;
+    z-index: 1;
+    width: 100%;
+}
+
+.topofpage{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100px;
+}
+
+.navbar{
+	position: sticky; /* Safari */
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: skyblue;
+    z-index: 100;
+    opacity: .9;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.navright{
+	margin-left: auto;
+}
+
+.logo {
+    margin-left: 95px;
+    text-align: left;
+    max-width: 400px;
+}
+
+.logo2{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo_img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.menu{
+	display: none;
+}
+
+.search {
+    margin-right: auto;
+    max-width: 60px;
+}
+
+.search_img{
+    width: 70%;
+}
+
+.join-community {
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+.headline{
+    color: #FFF;
+}
+
+.outer.tile.tilebg5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.page .join-community {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 65px;
+    white-space: nowrap;
+}
+
+a{
+	text-decoration: none;
+	colors: #FFF;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+a:hover {
+    color: #0541A8;
+}
+
+a: visited{
+	color: gray;
+}
+
+a: cover{
+	color: purple;
+}
+
+.tile {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.tilebg1 {
+     background-image: url("img/peacekeeper.png");
+}
+
+.tilebg2 {
+    background-image: url("img/suicidesquad.png");
+}
+
+.tilebg3 {
+    background-image: url("img/batman.png");
+}
+
+.tilebg4 {
+    background-image: url("img/mortalkombat.png");
+}
+
+.tilebg5 {
+    background-image: url("img/community.png");
+}
+
+@media screen and (max-width: 786px) {
+    body {
+        font-family: "Exo 2", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .page {
+        max-width: 480px;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .join-community {
+        display: none;
+    }
+
+    .topofpage {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search {
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+    .search_img {
+        width: 100%;
+    }
+
+    .menu {
+        display: inline-block;
+    }
+
+    .menu img {
+        width: 80px;
+        margin-top: 5px;
+        padding: 20px;
+    }
+
+    .logo {
+        position: absolute;
+        left: 35%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+}
+
+#menu img{
+	width: 80px;
+	cursor: pointer;
+}
+
+#menuoverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1000;
+    display: none;
+	background-color: #80CDFB;
+    color: #FFF;
+    font-size: 30px;
+	width: 100%;
+	text-align: center;
+}
+
+.innermenu{
+	margin-top: 50px;
+}
+
+.innermenu div{
+    margin: 10px;
+	padding-bottom: 50px;
+}
+
+#close{
+	cursor: pointer;
+	position: absolute;
+	top: 10px;
+	right: 50px;
+	font-size: 80px;
+}
