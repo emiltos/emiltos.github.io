@@ -1,0 +1,93 @@
+body {
+  font-family: helvetica, sans-serif;
+}
+
+.outer {
+  text-align: center;
+}
+
+.page {
+  max-width: 1200px;
+  width: 100%;
+  display: inline-block;
+}
+
+.topnav {
+  background-color: #BE554E;
+  height:100px;
+  text-align: left;
+  font-family: helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* HERO IMAGE */
+.hero_content{
+  margin-top: 20px;
+  text-align: left;
+}
+
+.hero_text_headline{
+  margin-top: 5px;
+  font-size: 45px;
+  color: #1C3B5E;
+}
+
+.hero_text_subheadline{
+  font-size: 23px;
+  margin-top: 10px;
+  color: #000000;
+}
+
+.hero_content img{
+  width:100%;
+}
+
+/* SIDEBAR COMPONENT */
+
+.side_bar{
+  height:100%;
+  overflow: auto;
+  margin-top:20px;
+  margin-bottom:20px;
+  text-align: left;
+  color: #1C3B5E;
+}
+
+.side_bar .section{
+   color: black;
+   text-transform: uppercase;
+   font-weight: bold;
+   margin-left: 10px;
+}
+
+.side-headline{
+  margin-left: 10px;
+
+}
+
+.continued_side_bar{
+  text-align: left;
+  margin-left: 25px;
+  margin-top: 15px;
+  color: #1C3B5E;
+}
+
+.side_bar img{
+  float: left;
+  width: 30%;
+  max-width: 450px;
+  margin-left: 30px;
+}
+
+/* [class^="side_bar"] element that starts with */
+div [class^="side_bar"]:first-of-type {
+    margin: 0px;
+    margin-top: 20px;
+   
+}
+
+div [class^="side_bar"]:last-of-type {
+    margin: 0px;
+   
+}
