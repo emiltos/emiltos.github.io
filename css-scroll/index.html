@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>scroll</title>
+<style>
+
+  body{
+    color: #ff9837;
+    background-color: #2a201f;
+  }
+ .page_content_stretch {
+   border: 1px solid white;
+   height: 3000px;
+ }
+ .scale_me {
+   position: fixed;
+   color: #ff9837;
+   top: 50%;
+   left: 50%;
+   transform-origin: center center;
+   transform: translate(-50%, -50%) scale(1, 1);
+
+   .treehorizon img{
+    width: 100%;
+   }
+ }
+</style>
+</head>
+<body>
+<div class="scale_me" id="scaleme">
+<div class="treehorizon"><img src="img/tree-horizon-1920x1258.jpg" class="treehorizon" alt="tree around rye field and cloudy and sunny horizon."/></div>
+</div>
+<div class="page_content_stretch">Page content</div>
+
+<!--JavaScript to Handle what happens as the page is scrolled. -->
+<script>
+/* ASSIGN A FUNCTION TO THE PAGE AS IT SCROLLS */
+document.body.onscroll = function(event) {
+    var scrollposition = window.pageYOffset;
+    var scalesize = 1 + scrollposition * 0.01;
+    document.getElementById("scaleme").style.transform = "translate(-50%, -50%) scale(" + scalesize + ")";
+};
+</script>
+</body>
+</html>
