@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.outer {
+    text-align: center;
+}
+
+.page {
+    display: inline-block;
+    text-align: left;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+    width: 100%;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+}
+
+.row [class^="col"] {
+    float: left;
+    margin: 0% 0%;
+    min-height: 0.125rem;
+}
+
+.col-1 {
+    width: 8.33%;
+    background: rgba(221, 190, 109);
+    min-height: 500px; 
+}
+
+.col-2 {
+    width: 16.66%;
+    background: rgba(249, 239, 237);
+}
+
+.col-3 {
+    width: 25%;
+    background: rgba(252, 231, 226);   
+}
+
+.col-4 {
+    width: 33.33%;
+    background: rgba(221, 190, 109, .9);
+}
+
+.col-5 {
+    width: 40%;
+    background: rgba(246, 201, 187);
+}
+
+.col-6 {
+    width: 50%;
+    min-height: 500px; /* Adjust the height as needed */
+}
+
+.col-7 {
+    width: 60%;
+    background: rgba(249, 179, 147);
+}
+
+.col-8 {
+    width: 66.67%;
+    background: rgba(249, 166, 125);
+}
+
+.col-9 {
+    width: 75%;
+    background: rgba(248, 155, 104);
+}
+
+.col-10 {
+    width: 80%;
+}
+
+.col-11 {
+    width: 91.67%;
+    min-height: 500px;
+}
+
+.col-12 {
+    width: 100%;
+    background: rgba(221, 190, 109, .9);
+}
+
+/*clearing content after each row */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div [class^="col"] {
+    height: 100px;
+    border: 1px;
+}
+
+/* gutter width on all col except the last */
+div [class^="col"] {
+    padding-right: 20px;
+}
+
+div [class^="col"]:last-of-type {
+    padding-right: 0px;
+}

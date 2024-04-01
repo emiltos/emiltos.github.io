@@ -1,0 +1,216 @@
+/* Body styles */
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F0D3;
+}
+
+/* Page styles */
+.page {
+    color: #FFF;
+    font-size: 75px;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 100%;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1800px;
+}
+
+.content img{
+    width: 50%;
+    margin-top: 30px;
+
+}
+
+/* Navigation styles */
+.col-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0; 
+    z-index: 999;
+}
+
+.navhere {
+    color: #F5DEB3;
+}
+
+/* Logo styles */
+.logo {
+    text-align: left;
+}
+
+.logo_img {
+    width:120%;
+    max-width: 300px;
+}
+
+/* Image styles */
+.emiliano_img {
+    width: 92%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.aboutme_img {
+    margin-top: 45px;
+    width: 40%;
+}
+
+.resume2024_img {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 65%;
+}
+
+/* Link styles */
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 40px;
+}
+
+a:hover {
+    color: #F0E68C;
+}
+
+/* Learn more button styles */
+.learnmore_button {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #C7AA5C;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.learnmore_button:hover {
+    color: #FFF;
+    animation-fill-mode: fowards;
+    animation-name: changescale;
+    animation-duration: 15s;
+    animation-timing-functions: ease-out;
+}
+
+/* Columns styles */
+.col-11,
+.col-1 {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.col-11 {
+    position: relative;
+     overflow: hidden;
+}
+
+.col-1 {
+    margin-right: 2%;
+    font-family: helvetica, sans-serif;
+    color: #FFF;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.col-1 p {
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    line-height: 2;
+}
+
+.col-6 {
+    position: relative;
+     overflow: hidden;
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.col-10 {
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #cfb570;
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+/* Child container styles */
+.childcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:80vh;
+}
+
+/* Tile styles */
+.tile1,
+.tile2,
+.tile3 {
+    width: 100%;
+    min-height: 200px;
+    background-color: rgba(221, 190, 109, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+/* Tile hover animation */
+.tile1:hover,
+.tile2:hover,
+.tile3:hover {
+    animation-fill-mode: fowards;
+    animation-name: changescale;
+    animation-duration: 15s;
+    animation-timing-functions: ease-out;
+}
+
+@keyframes changescale {
+    from {transform: scale(1.1,1.1)}
+    to {transform: scale(1.1,1.1)}
+}
+
+/* Tile background images */
+.tile1 {
+     background-image: url("img/designwork.jpg");
+}
+
+.tile2 {
+    background-image: url("img/resume.jpg");
+}
+
+.tile3 {
+    background-image: url("img/contact.jpg");
+}
